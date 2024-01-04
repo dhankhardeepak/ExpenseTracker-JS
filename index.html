@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet"/>
+    
+</head>
+<body>
+    <h1 class="text-center">Expense Tracker</h1>
+    <div class="balance">
+        <p>Your Balance</p>
+        <p class="remBalance" id="balance">$0.00</p>
+    </div>
+    <div class="summaryPartition">
+        <div class="group text-center">
+            <p class="f500">INCOME</p>
+            <p class="f300 income" id="incomeTxt">$0.00</p>
+        </div>
+        <span class="partition"></span>
+        <div class="group text-center">
+            <p class="f500">EXPENSE</p>
+            <p class="f300 expense" id="expenseTxt">$0.00</p>
+        </div>
+    </div>
+    <div class="historyMain">
+        <h2 class="f500 underline">History</h2>
+        <ul id="historyList">
+            
+        </ul>
+    </div>
+    <div>
+        <h2 class="f500 underline">Add New Transaction</h2>
+    </div>
+    <form>
+        <div class="form-group">
+            <label for="textInput">Text</label>
+            <input type="text" placeholder="Enter Text..." id="textInput"/>
+        </div>
+        <div class="form-group">
+            <label for="amountInput">Amount</label>
+            <input type="number" placeholder="Enter Amount..." id="amountInput"/>
+        </div> 
+        <button class="addTransaction" id="addBtn">Add Transaction</button> 
+    </form>
+</body>
+<script src="index.js"></script>
+</html>
